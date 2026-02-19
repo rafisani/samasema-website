@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SamaSema Projects: Senyuman di Akhir Masa SMA</title>
+  <meta name="description"
+    content="SamaSemaProjects adalah jasa buku tahunan sekolah profesional di Bandar Lampung. Desain kekinian, kualitas premium, proses terstruktur. Abadikan kenangan terbaikmu bersama kami." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="logo.svg" alt="SamaSema Logo" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">Tentang Kami</a></li>
+        <li><a href="#why" class="nav-link">Keunggulan</a></li>
+        <li><a href="#packages" class="nav-link">Paket</a></li>
+        <li><a href="#payment" class="nav-link">Pembayaran</a></li>
+        <li><a href="#contact" class="nav-link nav-cta" id="navCta">Hubungi Kami</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        Bandar Lampung · Lampung, Indonesia
+      </div>
+      <h1 class="hero-headline reveal-up">
+        Abadikan <span class="text-gradient">Senyuman</span><br />
+        Akhir Masa <span class="text-gradient-blue">SMA-mu</span>
+      </h1>
+      <p class="hero-sub reveal-up">
+        Buku tahunan premium dengan desain fresh & kekinian. Tim profesional yang siap mewujudkan kenangan angkatanmu
+        jadi karya yang layak dikenang selamanya.
+      </p>
+      <div class="hero-actions reveal-up">
+        <a href="https://wa.me/62895338381625?text=Halo%20SamaSema!%20Saya%20ingin%20konsultasi%20buku%20tahunan%20sekolah."
+          target="_blank" class="btn btn-primary" id="heroWaBtn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Chat WhatsApp Sekarang
+        </a>
+        <a href="#packages" class="btn btn-secondary">
+          Lihat Paket
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+      <div class="hero-stats reveal-up">
+        <div class="stat-item">
+          <span class="stat-num" data-target="100">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Angkatan Dipercaya</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-label">Paket Tersedia</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Kepuasan Klien</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card-stack">
+            <div class="abs-card card-back">
+              <div class="card-photo placeholder-photo">
+                <div class="photo-grid">
+                  <div class="photo-cell cell-1"></div>
+                  <div class="photo-cell cell-2"></div>
+                  <div class="photo-cell cell-3"></div>
+                  <div class="photo-cell cell-4"></div>
+                </div>
+              </div>
+            </div>
+            <div class="abs-card card-front">
+              <div class="about-logo-display">
+                <img src="logo.svg" alt="SamaSema Logo" class="about-logo-img" />
+              </div>
+              <div class="badge-floating">
+                <span>⭐</span> PT. Bersama Senyuman Abadi
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-label reveal-up">Tentang Kami</div>
+          <h2 class="section-title reveal-up">
+            Kami Adalah <span class="text-gradient">SamaSema</span>
+          </h2>
+          <p class="about-desc reveal-up">
+            <strong>SamaSemaProjects</strong> adalah brand buku tahunan sekolah yang mengusung semangat dan keceriaan.
+            Kami percaya bahwa yearbook bukan cuma soal foto dan biodata. Ini tentang menutup satu bab hidup dengan
+            cerita yang <em>pantas dikenang</em> bersama teman-teman satu perjuangan.
+          </p>
+          <p class="about-desc reveal-up">
+            Dengan tim kreatif berpengalaman di bidang desain, fotografi, dan videografi, kami hadir untuk memudahkan
+            sekolah dalam membuat buku tahunan berkualitas tinggi: desain menarik, proses cepat, dan harga terjangkau.
+          </p>
+          <div class="about-info-grid reveal-up">
+            <div class="info-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Bandar Lampung, Lampung
+            </div>
+            <div class="info-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              samasemaprojects.id@gmail.com
+            </div>
+            <div class="info-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              +62 895-3383-81625
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ WHY US ═══════════════ -->
+  <section class="why section" id="why">
+    <div class="why-bg-glow"></div>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal-up">Keunggulan Kami</div>
+        <h2 class="section-title reveal-up">Kenapa Pilih <span class="text-gradient">SamaSema?</span></h2>
+        <p class="section-sub reveal-up">Beda dari vendor lain. Kami bawa visi kreatif, proses transparan, dan dedikasi
+          penuh untuk angkatanmu.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal-up" id="why1">
+          <div class="why-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <h3>Desain Fresh & Kekinian</h3>
+          <p>Visual yang relevan, estetik, dan mencerminkan karakter unik tiap angkatan. Bukan template biasa.</p>
+        </div>
+        <div class="why-card reveal-up" id="why2">
+          <div class="why-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+          </div>
+          <h3>Paket yang Fleksibel</h3>
+          <p>Dari yang budget-friendly sampai all-in premium, ada paket yang pas untuk setiap kebutuhan angkatan.</p>
+        </div>
+        <div class="why-card reveal-up" id="why3">
+          <div class="why-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+            </svg>
+          </div>
+          <h3>Tim Profesional & Supportif</h3>
+          <p>Responsif, ramah, dan siap berkolaborasi. Kami kerja bareng kamu, bukan sekedar vendor.</p>
+        </div>
+        <div class="why-card reveal-up" id="why4">
+          <div class="why-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 11l3 3L22 4" />
+              <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+            </svg>
+          </div>
+          <h3>Proses Terstruktur & Transparan</h3>
+          <p>Timeline jelas, update berkala, dan kamu selalu tahu progress bukumu sampai di tangan angkatan.</p>
+        </div>
+        <div class="why-card reveal-up" id="why5">
+          <div class="why-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 8v4l3 3" />
+            </svg>
+          </div>
+          <h3>Bebas Request Konsep & Tema</h3>
+          <p>Punya ide unik? Kami open banget untuk eksplorasi konsep kreatif yang mencerminkan jiwa angkatanmu.</p>
+        </div>
+        <div class="why-card why-card-cta reveal-up" id="why6">
+          <p class="why-cta-text">Siap abadikan kenangan terbaikmu?</p>
+          <a href="https://wa.me/62895338381625?text=Halo%20SamaSema!%20Saya%20ingin%20konsultasi%20buku%20tahunan%20sekolah."
+            target="_blank" class="btn btn-primary btn-sm">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Konsultasi Gratis
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PACKAGES ═══════════════ -->
+  <section class="packages section" id="packages">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal-up">Paket Kami</div>
+        <h2 class="section-title reveal-up">Pilih <span class="text-gradient">Senyumanmu</span></h2>
+        <p class="section-sub reveal-up">Karena setiap angkatan punya cara sendiri untuk mengabadikan kenangan. Kami
+          sediakan tiga pilihan terbaik.</p>
+      </div>
+
+      <div class="packages-grid">
+
+        <!-- PAKET C CERIA -->
+        <div class="pkg-card reveal-up" id="pkgCeria">
+          <div class="pkg-header">
+            <div class="pkg-badge badge-c">Paket C</div>
+            <h3 class="pkg-name">Ceria</h3>
+            <p class="pkg-tagline">Simpel, Cepat, Tetap Berkualitas</p>
+            <div class="pkg-price">
+              <span class="price-label">Mulai dari</span>
+              <span class="price-amount">Rp 450.000</span>
+              <span class="price-unit">/siswa</span>
+            </div>
+          </div>
+          <div class="pkg-body">
+            <ul class="pkg-features">
+              <li><span class="feat-icon">✦</span> Buku tahunan dengan template desain kekinian</li>
+              <li><span class="feat-icon">✦</span> Layout menyatu sempurna dengan konten</li>
+              <li><span class="feat-icon">✦</span> Cetak full color, warna tajam dan merata</li>
+              <li><span class="feat-icon">✦</span> Proses produksi cepat dan efisien</li>
+              <li><span class="feat-icon">✦</span> Pilihan terbaik untuk angkatan dengan budget terencana</li>
+              <li><span class="feat-icon">✦</span> File digital arsip siap simpan selamanya</li>
+            </ul>
+          </div>
+          <div class="pkg-footer">
+            <a href="https://wa.me/62895338381625?text=Halo%20SamaSema!%20Saya%20tertarik%20dengan%20Paket%20C%20CERIA.%20Boleh%20info%20lebih%20lanjut?"
+              target="_blank" class="btn btn-outline btn-full">
+              Pilih Paket Ceria
+            </a>
+          </div>
+        </div>
+
+        <!-- PAKET B BAHAGIA -->
+        <div class="pkg-card pkg-featured reveal-up" id="pkgBahagia">
+          <div class="pkg-popular-badge">⭐ Terpopuler</div>
+          <div class="pkg-header">
+            <div class="pkg-badge badge-b">Paket B</div>
+            <h3 class="pkg-name">Bahagia</h3>
+            <p class="pkg-tagline">Eksklusif, Berkesan, Lengkap</p>
+            <div class="pkg-price">
+              <span class="price-label">Harga</span>
+              <span class="price-amount">Custom</span>
+              <span class="price-unit">sesuai kebutuhan</span>
+            </div>
+          </div>
+          <div class="pkg-body">
+            <ul class="pkg-features">
+              <li><span class="feat-icon">✦</span> Buku tahunan full custom sesuai karakter angkatan</li>
+              <li><span class="feat-icon">✦</span> Desain eksklusif mencerminkan identitas sekolah</li>
+              <li><span class="feat-icon">✦</span> Kertas full color kualitas terbaik, warna hidup</li>
+              <li><span class="feat-icon">✦</span> Hard cover premium, kokoh dan elegan</li>
+              <li><span class="feat-icon">✦</span> Box buku Grade A, tebal, rapi, dan berkesan</li>
+              <li><span class="feat-icon">✦</span> Dokumentasi foto acara sekolah profesional</li>
+              <li><span class="feat-icon">✦</span> File foto resolusi tinggi, siap cetak dan digital</li>
+            </ul>
+          </div>
+          <div class="pkg-footer">
+            <a href="https://wa.me/62895338381625?text=Halo%20SamaSema!%20Saya%20tertarik%20dengan%20Paket%20B%20BAHAGIA.%20Boleh%20info%20lebih%20lanjut?"
+              target="_blank" class="btn btn-primary btn-full">
+              Pilih Paket Bahagia
+            </a>
+          </div>
+        </div>
+
+        <!-- PAKET A ABADI -->
+        <div class="pkg-card reveal-up" id="pkgAbadi">
+          <div class="pkg-header">
+            <div class="pkg-badge badge-a">Paket A</div>
+            <h3 class="pkg-name">Abadi</h3>
+            <p class="pkg-tagline">All-In Premium, Tanpa Kompromi</p>
+            <div class="pkg-price">
+              <span class="price-label">Harga</span>
+              <span class="price-amount">Custom</span>
+              <span class="price-unit">sesuai kebutuhan</span>
+            </div>
+          </div>
+          <div class="pkg-body">
+            <ul class="pkg-features">
+              <li><span class="feat-icon">✦</span> Buku tahunan full custom dengan konsep visual unik</li>
+              <li><span class="feat-icon">✦</span> Hard cover finishing eksklusif, mewah di tangan</li>
+              <li><span class="feat-icon">✦</span> Box buku custom tebal, kokoh, dan berkarakter</li>
+              <li><span class="feat-icon">✦</span> Dokumentasi foto dan <strong>video</strong> acara sekolah lengkap
+              </li>
+              <li><span class="feat-icon">✦</span> Video highlight cinematic acara angkatan</li>
+              <li><span class="feat-icon">✦</span> Dukungan sponsorship acara hingga <strong>Rp5.000.000</strong></li>
+              <li><span class="feat-icon">✦</span> Tim dokumentasi profesional siap di lapangan</li>
+              <li><span class="feat-icon">✦</span> Backup data aman, kenangan tersimpan selamanya</li>
+            </ul>
+          </div>
+          <div class="pkg-footer">
+            <a href="https://wa.me/62895338381625?text=Halo%20SamaSema!%20Saya%20tertarik%20dengan%20Paket%20A%20ABADI.%20Boleh%20info%20lebih%20lanjut?"
+              target="_blank" class="btn btn-outline btn-full">
+              Pilih Paket Abadi
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Standard Services -->
+      <div class="std-services reveal-up">
+        <h4 class="std-title">✅ Semua Paket Sudah Termasuk:</h4>
+        <div class="std-grid">
+          <div class="std-item"><span>🎨</span> Tim desain & produksi berpengalaman</div>
+          <div class="std-item"><span>🔄</span> Revisi sesuai ketentuan paket</div>
+          <div class="std-item"><span>📐</span> Proses desain terkoordinasi</div>
+          <div class="std-item"><span>🖨️</span> Kualitas cetak rapi & terkontrol</div>
+          <div class="std-item"><span>💾</span> File akhir siap cetak & arsip digital</div>
+          <div class="std-item"><span>📅</span> Timeline kerja jelas & terjadwal</div>
+        </div>
+      </div>
+
+      <p class="pkg-note reveal-up">
+        * Detail jumlah halaman, spesifikasi teknis, dan ruang lingkup dokumentasi menyesuaikan kebutuhan serta
+        kesepakatan dengan pihak sekolah.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PAYMENT ═══════════════ -->
+  <section class="payment section" id="payment">
+    <div class="payment-bg-grad"></div>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal-up">Mekanisme Pembayaran</div>
+        <h2 class="section-title reveal-up">Sistem <span class="text-gradient">3 Termin</span></h2>
+        <p class="section-sub reveal-up">Kami menerapkan sistem pembayaran bertahap untuk memastikan proses produksi
+          berjalan lancar dan transparan.</p>
+      </div>
+      <div class="payment-timeline">
+        <div class="payment-step reveal-up" id="pay1">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <div class="step-badge">Uang Muka</div>
+            <div class="step-percent">50%</div>
+            <h4>Termin 1: Setelah Kesepakatan</h4>
+            <p>Dibayarkan saat kerja sama disetujui (tenggat 1 bulan). Dana digunakan untuk memulai proses desain,
+              koordinasi teknis, serta persiapan sesi foto dan layout awal.</p>
+          </div>
+        </div>
+        <div class="timeline-connector reveal-up"></div>
+        <div class="payment-step reveal-up" id="pay2">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <div class="step-badge">Setelah Sesi Foto</div>
+            <div class="step-percent">30%</div>
+            <h4>Termin 2: Pasca Sesi Foto Utama</h4>
+            <p>Dibayarkan setelah sesi foto kelas dan angkatan selesai. Di tahap ini, proses desain dan kompilasi konten
+              buku masuk ke tahap percetakan.</p>
+          </div>
+        </div>
+        <div class="timeline-connector reveal-up"></div>
+        <div class="payment-step reveal-up" id="pay3">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <div class="step-badge">Saat Buku Diterima</div>
+            <div class="step-percent">20%</div>
+            <h4>Termin 3: Pelunasan</h4>
+            <p>Pelunasan dilakukan saat buku tahunan selesai dicetak dan siap didistribusikan. Tim kami memastikan
+              kualitas sesuai kesepakatan sebelum diterima panitia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT / CTA ═══════════════ -->
+  <section class="contact section" id="contact">
+    <div class="contact-glow g1"></div>
+    <div class="contact-glow g2"></div>
+    <div class="container">
+      <div class="contact-inner">
+        <div class="section-label reveal-up">Hubungi Kami</div>
+        <h2 class="contact-headline reveal-up">
+          Siap Abadikan<br /><span class="text-gradient">Kenangan Angkatanmu?</span>
+        </h2>
+        <p class="contact-sub reveal-up">
+          Konsultasi gratis, tanpa komitmen. Ceritakan visimu dan kami siap wujudkan jadi buku tahunan yang akan selalu
+          dikenang.
+        </p>
+        <div class="contact-actions reveal-up">
+          <a href="https://wa.me/62895338381625?text=Halo%20SamaSema!%20Saya%20ingin%20konsultasi%20tentang%20buku%20tahunan%20sekolah%20kami."
+            target="_blank" class="btn btn-primary btn-lg" id="mainWaBtn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Chat WhatsApp Sekarang
+          </a>
+          <a href="mailto:samasemaprojects.id@gmail.com" class="btn btn-ghost btn-lg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            Kirim Email
+          </a>
+        </div>
+        <div class="contact-info reveal-up">
+          <div class="ci-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            +62 895-3383-81625
+          </div>
+          <div class="ci-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            samasemaprojects.id@gmail.com
+          </div>
+          <div class="ci-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Bandar Lampung, Lampung, Indonesia
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo footer-logo">
+            <img src="logo.svg" alt="SamaSema Logo" class="footer-logo-img" />
+          </a>
+          <p class="footer-tagline">Senyuman di Akhir Masa SMA</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">Tentang Kami</a>
+          <a href="#why">Keunggulan</a>
+          <a href="#packages">Paket</a>
+          <a href="#payment">Pembayaran</a>
+          <a href="#contact">Kontak</a>
+        </div>
+        <div class="footer-contact">
+          <a href="https://wa.me/62895338381625" target="_blank">+62 895-3383-81625</a>
+          <a href="mailto:samasemaprojects.id@gmail.com">samasemaprojects.id@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SamaSemaProjects. All rights reserved. · Bandar Lampung, Lampung, Indonesia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════ FLOATING WA BUTTON ═══════════════ -->
+  <a href="https://wa.me/62895338381625?text=Halo%20SamaSema!%20Saya%20ingin%20tanya%20tentang%20buku%20tahunan."
+    target="_blank" class="wa-float" id="waFloat" aria-label="Chat WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    <span class="wa-tooltip">Chat Kami!</span>
+    <span class="wa-pulse"></span>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
